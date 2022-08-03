@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"my-store","dependencies":{"@hapi/boom":{"version":"10.0.0"},"cors":{"version":"2.8.5"},"dotenv":{"version":"16.0.1"},"express":{"version":"4.18.1"},"faker":{"version":"5.5.3"},"joi":{"version":"17.6.0"},"pg-hstore":{"version":"2.3.4"},"pg":{"version":"8.7.3"},"ps":{"version":"1.0.0"},"sequelize":{"version":"6.21.3"}}}

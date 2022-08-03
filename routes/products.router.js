@@ -26,7 +26,6 @@ router.get("/:id",
     } catch(err) {
         next(err);
     }
-
 });
 
 router.post('/',
