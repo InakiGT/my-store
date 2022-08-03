@@ -3,6 +3,8 @@ const { USER_TABLE }= require('./user.model');
 
 const CUSTOMER_TABLE = 'customers';
 
+console.log("HOLA");
+
 const CustomerSchema = {
     id: {
         allowNull: false,
