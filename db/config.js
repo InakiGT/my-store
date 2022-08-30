@@ -4,13 +4,15 @@ const { config } = require('../config/config');
 module.exports = {
     development: {
         url: config.dbUrl,
-        dialect: 'mysql'
+        dialect: 'postgres'
     },
     production: {
         url: config.dbUrl,
-        dialect: 'mysql',
-        ssl: {
-            rejectUnauthorized: false,
+        dialect: 'postgres',
+        dialectOptions: {
+            ssl: {
+                rejectUnauthorized: false,
+            },
         },
     },
 }
