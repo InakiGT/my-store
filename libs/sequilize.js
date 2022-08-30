@@ -4,13 +4,15 @@ const { config } = require('../config/config');
 const setupModels = require('../db/models');
 
 const options = {
-    dialect: 'mysql',
+    dialect: 'postgres',
     logging: config.isProd ? false : () => {},
 }
 
 if( config.isProd ) {
-    options.ssl = {
-        rejectUnauthorized: false,
+    options.dialectOptions = {
+        ssl: {
+            rejectUnauthorized: false,
+        }
     }
 }
 
